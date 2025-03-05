@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Person</title>
+</head>
+<body>
+ <h1>Add person</h1>
+  
+ <form th:action="@{/persons/create}" th:object="${personForm}" method="Post">
+    <div>
+        <label for="">Name</label>
+        <input type="text"  id="name" th:field="*{name}">
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
+     </div>
+     <div>
+        <label for="">Age</label>
+        <input type="number"  id="age" th:field="*{age}">
+        <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</span>
+     </div>
+     <div>
+        <label for="">Photo</label>
+        <input type="text"  id="photo" th:field="*{photo}" readonly>
+        <span th:if="${#fields.hasErrors('photo')}" th:errors="*{photo}">Photo Error</span>
+     </div>
+    <div> 
+        <input type="submit" value="Add">
+    </div>
+ </form>
+ <br> <br>
+ <div>
+    <a th:href="@{/persons}">Back</a>
+ </div> 
+</body>
+</html>

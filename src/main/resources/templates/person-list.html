@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Person List</title>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Person List</h1>
+    <div>
+        <a th:href="@{/persons/create}">Add person</a>
+    </div>
+    <br>
+
+    <table border="1" width="80%">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Photo</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="person:${persons}">
+            <td th:text="${person.id}"></td>
+            <td th:text="${person.name}"></td>
+            <td th:text="${person.age}"></td>
+            <td><img th:src="(${person.photo}!=null)?@{|images/${person.photo}|}:@{'images/default.png'}" alt="Photo"
+                    width="50" height="50"></td>
+            <td>
+                <!-- <form th:action="@{|/persons/${person.id}/edit|}" method="get">
+                    <input type="submit" value="Update">
+                </form> -->
+                <form th:action="@{|/persons/${person.id}/delete|}" method="Post">
+                    <input type="submit" value="Delete">
+                </form>
+            </td> 
+        </tr>
+    </table>
+</body>
+
+</html>
