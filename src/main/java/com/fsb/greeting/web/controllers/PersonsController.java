@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  *        - Post  /persons/create : Ajouter une nouvelle personne à la liste persons
  * 
  * Update - Get   /persons/{id}/edit : Récupérer le formulaire de modificatin d'une personne
- *        - Post  /persons/{id}/edit : Mettre à jour une  personne de la liste persons
+ *        - Post  /persons/{id}/edit : Permet de mettre à jour une  personne de la liste persons
  * 
  * Delete - Post /persons/{id}/delete : Supprimer une personne de la liste persons par son id
  */
@@ -65,6 +65,45 @@ public class PersonsController {
         return "redirect:/persons";
     }
     
+   
+     
+/*Update - GET  /persons/{id}/edit : Récupérer le formulaire de modificatin d'une personne */
+    @RequestMapping("/{id}/edit")
+    public String showUpdatePersonForm(@PathVariable Long id, Model model) {
+        //Chercher la personne par son id
+        for(Person person:persons){
+            if(person.getId()==id){
+                model.addAttribute("personForm", new PersonForm(person.getName(),person.getAge(),person.getPhoto()));
+                model.addAttribute("id", person.getId());
+                return "update-person";
+            }
+        }
+        return "redirect:/persons";
+    }
+
+    
+     /*Update - POST   /persons/{id}/edit : Permet de mettre à jour une  personne de la liste persons */
+     @RequestMapping(path="/{id}/edit", method=RequestMethod.POST)
+     public String updatePerson(@ModelAttribute @Valid PersonForm personForm,
+                                BindingResult bindingResult,
+                                 @PathVariable Long id) {
+         if(bindingResult.hasErrors()){
+            return "update-person";
+         }
+         
+         //Chercher la personne par son id
+        for(Person person:persons){
+            if(person.getId()==id){
+                person.setName(personForm.getName());
+                person.setAge(personForm.getAge());
+                person.setPhoto(personForm.getPhoto());
+                //return "redirect:/persons";
+                break;
+            }
+        }
+        return "redirect:/persons";
+     }
+
     /*Exemple: Post /persons/1/delete */
     @RequestMapping(path="/{id}/delete", method=RequestMethod.POST)
     public String deletePersonById(@PathVariable Long id ) {

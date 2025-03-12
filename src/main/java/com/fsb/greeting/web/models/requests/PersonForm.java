@@ -16,7 +16,7 @@ import lombok.Setter;
 @Setter
 public class PersonForm {
    // @NotBlank(message="Nom obligatoir")
-   @NotBlank
+    @NotBlank
     private String name;
     @NotNull
     @Min(2)

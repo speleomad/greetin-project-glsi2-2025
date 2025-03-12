@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update person</title>
+<script type="text/javascript"></script>
+</head>
+<body>
+    <h1>Update person</h1>
+  
+    <form th:action="@{|/persons/${id}/edit|}" th:object="${personForm}" method="Post">
+       <div>
+           <label for="">Name</label>
+           <input type="text"  id="name" th:field="*{name}">
+           <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
+        </div>
+        <div>
+           <label for="">Age</label>
+           <input type="number"  id="age" th:field="*{age}">
+           <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</span>
+        </div>
+        <div>
+           <label for="">Photo</label>
+           <input type="text"  id="photo" th:field="*{photo}" readonly>
+           <span th:if="${#fields.hasErrors('photo')}" th:errors="*{photo}">Photo Error</span>
+        </div>
+       <div> 
+           <input type="submit" value="Update">
+       </div>
+    </form>
+    <br> <br>
+    <div>
+       <a th:href="@{/persons}">Back</a>
+    </div>
+</body>
+</html>
