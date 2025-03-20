@@ -2,83 +2,54 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Person List</title>
-    <script type="text/javascript"></script>
-    <link rel="stylesheet" th:href="@{/webjars/bootswatch/dist/flatly/bootstrap.css}"> 
+  <meta charset="UTF-8">
+  <title>Person List</title>
+  <link rel="stylesheet" th:href="@{/webjars/bootswatch/dist/flatly/bootstrap.css}">
+  <script type="text/javascript"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+  <div class="container">
+    <h1> People List</h1>
+
+    <a th:href="@{/persons/create}" class="btn btn-primary">Add Person</a> <br /><br />
+
+    <table class="table table-hover" th:unless="${#lists.isEmpty(persons)}">
+      <tr class="table-dark">
+        <th>id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Photo</th>
+        <th>Actions</th>
+      </tr>
+      <tr th:each="person,state:${persons}" th:class="${state.even}?table-light:''">
+        <td th:text="${person.id}"></td>
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.Age}"></td>
+        <td><img th:src="(${person.photo}?@{|images/${person.photo}|}:@{'images/default.png'})" alt="photo"
+            class="img-rounded img-responsive" style="max-height: 50px; max-width: 50px;"></td>
+        <td>
+          <div class="row">
+            <form class="col-4" th:action="@{|/persons/${person.id}/edit|}" method="get">
+              <input type="submit" class="btn btn-success" value="Update">
+            </form>
+            <form class="col-8" th:action="@{|/persons/${person.id}/delete|}" method="Post">
+              <input type="submit" class="btn btn-danger" value="Delete">
             </form>
           </div>
-        </div>
-      </nav>
-    <h1>Person List</h1>
-    <div>
-        <a th:href="@{/persons/create}">Add person</a>
-    </div>
-    <br>
-
-    <table border="1" width="80%">
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Photo</th>
-            <th>Actions</th>
-        </tr>
-        <tr th:each="person:${persons}">
-            <td th:text="${person.id}"></td>
-            <td th:text="${person.name}"></td>
-            <td th:text="${person.age}"></td>
-            <td><img th:src="(${person.photo}!=null)?@{|images/${person.photo}|}:@{'images/default.png'}" alt="Photo"
-                    width="50" height="50"></td>
-            <td>
-                <form th:action="@{|/persons/${person.id}/edit|}" method="get">
-                    <input type="submit" value="Update">
-                </form> 
-                <form th:action="@{|/persons/${person.id}/delete|}" method="Post">
-                    <input type="submit" value="Delete">
-                </form>
-            </td> 
-        </tr>
+        </td>
+      </tr>
     </table>
-</body>
+    <div class="alert alert-warning" th:if="${#lists.isEmpty(persons)}">
+      No person found !
+    </div>
+  </div>
 
-</html>
+  <footer class="mt-5">
+    <p class="text-center">
+      &copy; <span th:text="${#dates.year(#dates.createNow())}"></span> MyFirstSpringMVCApp. All rights reserved
+    </p>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+  </footer>
+</body>
