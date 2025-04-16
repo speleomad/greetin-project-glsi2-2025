@@ -1,56 +1,480 @@
-2025-03-19T09:30:44.150+01:00  INFO 6708 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 6708 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
-2025-03-19T09:30:44.177+01:00  INFO 6708 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-03-19T09:30:44.486+01:00  INFO 6708 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-19T09:30:44.493+01:00  INFO 6708 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-19T09:30:51.110+01:00  INFO 6708 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-19T09:30:51.196+01:00  INFO 6708 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-19T09:30:51.199+01:00  INFO 6708 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-03-19T09:30:51.482+01:00  INFO 6708 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-19T09:30:51.483+01:00  INFO 6708 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6989 ms
-2025-03-19T09:30:58.906+01:00  INFO 6708 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-19T09:30:58.943+01:00  INFO 6708 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-19T09:30:59.302+01:00  INFO 6708 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-03-19T09:30:59.479+01:00  INFO 6708 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 17.198 seconds (process running for 20.778)
-2025-03-19T09:33:27.433+01:00  INFO 6708 --- [greeting] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-19T09:33:27.434+01:00  INFO 6708 --- [greeting] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-19T09:33:27.440+01:00  INFO 6708 --- [greeting] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2025-03-19T09:33:31.282+01:00 ERROR 6708 --- [greeting] [http-nio-8080-exec-8] c.f.g.w.controllers.ExceptionController  : No static resource favicon.ico.
-2025-03-19T09:33:31.285+01:00  WARN 6708 --- [greeting] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
-2025-03-19T09:34:15.257+01:00  INFO 11472 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 11472 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
-2025-03-19T09:34:15.265+01:00  INFO 11472 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-03-19T09:34:15.458+01:00  INFO 11472 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-19T09:34:15.462+01:00  INFO 11472 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-19T09:34:20.525+01:00  INFO 11472 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-19T09:34:20.579+01:00  INFO 11472 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-19T09:34:20.581+01:00  INFO 11472 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-03-19T09:34:20.871+01:00  INFO 11472 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-19T09:34:20.873+01:00  INFO 11472 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5347 ms
-2025-03-19T09:34:25.095+01:00  INFO 11472 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-19T09:34:25.115+01:00  INFO 11472 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-19T09:34:25.293+01:00  INFO 11472 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-03-19T09:34:25.374+01:00  INFO 11472 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 11.38 seconds (process running for 12.696)
-2025-03-19T09:34:27.342+01:00  INFO 11472 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-19T09:34:27.414+01:00  INFO 11472 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-19T09:34:27.418+01:00  INFO 11472 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-19T09:34:33.232+01:00 ERROR 11472 --- [greeting] [http-nio-8080-exec-9] c.f.g.w.controllers.ExceptionController  : No static resource favicon.ico.
-2025-03-19T09:34:33.251+01:00  WARN 11472 --- [greeting] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
-2025-03-19T09:36:40.289+01:00  INFO 14152 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 14152 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
-2025-03-19T09:36:40.295+01:00  INFO 14152 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-03-19T09:36:40.420+01:00  INFO 14152 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-19T09:36:40.423+01:00  INFO 14152 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-19T09:36:43.743+01:00  INFO 14152 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-19T09:36:43.793+01:00  INFO 14152 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-19T09:36:43.795+01:00  INFO 14152 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-03-19T09:36:43.936+01:00  INFO 14152 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-19T09:36:43.940+01:00  INFO 14152 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3512 ms
-2025-03-19T09:36:46.383+01:00  INFO 14152 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-19T09:36:46.399+01:00  INFO 14152 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-03-19T09:36:46.564+01:00  INFO 14152 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-03-19T09:36:46.597+01:00  INFO 14152 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 7.096 seconds (process running for 8.271)
-2025-03-19T09:36:48.090+01:00  INFO 14152 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-19T09:36:48.091+01:00  INFO 14152 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-19T09:36:48.095+01:00  INFO 14152 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-03-19T09:36:53.753+01:00 ERROR 14152 --- [greeting] [http-nio-8080-exec-6] c.f.g.w.controllers.ExceptionController  : No static resource favicon.ico.
-2025-03-19T09:36:53.768+01:00  WARN 14152 --- [greeting] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
-2025-03-19T09:37:32.294+01:00 ERROR 14152 --- [greeting] [http-nio-8080-exec-9] c.f.g.w.controllers.ExceptionController  : No static resource favicon.ico.
-2025-03-19T09:37:32.308+01:00  WARN 14152 --- [greeting] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-04-16T08:44:39.739+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 14940 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T08:44:39.893+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T08:44:40.076+01:00  INFO 14940 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-16T08:44:40.078+01:00  INFO 14940 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-16T08:44:45.632+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T08:44:45.660+01:00  INFO 14940 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T08:44:45.661+01:00  INFO 14940 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T08:44:45.813+01:00  INFO 14940 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T08:44:45.815+01:00  INFO 14940 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5735 ms
+2025-04-16T08:44:49.925+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T08:44:50.008+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T08:44:50.280+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T08:44:50.323+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 12.173 seconds (process running for 13.327)
+2025-04-16T08:44:50.500+01:00  INFO 14940 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-16T08:44:50.527+01:00  INFO 14940 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-16T08:44:50.542+01:00  INFO 14940 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-16T09:11:04.239+01:00  INFO 14940 --- [greeting] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-16T09:11:04.244+01:00  INFO 14940 --- [greeting] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-16T09:11:04.605+01:00  INFO 14940 --- [greeting] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-16T09:11:04.788+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 14940 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:11:04.793+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:11:05.503+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:11:05.506+01:00  INFO 14940 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:11:05.511+01:00  INFO 14940 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:11:05.589+01:00  INFO 14940 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:11:05.593+01:00  INFO 14940 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
+2025-04-16T09:11:07.116+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:11:07.124+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:11:07.167+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:11:07.187+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 2.453 seconds (process running for 1590.191)
+2025-04-16T09:11:07.204+01:00  INFO 14940 --- [greeting] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-16T09:18:09.351+01:00  INFO 14940 --- [greeting] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-16T09:18:09.357+01:00  INFO 14940 --- [greeting] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-16T09:18:09.836+01:00  INFO 14940 --- [greeting] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-16T09:18:09.919+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 14940 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:18:09.920+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:18:10.647+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:18:10.649+01:00  INFO 14940 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:18:10.649+01:00  INFO 14940 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:18:10.701+01:00  INFO 14940 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:18:10.702+01:00  INFO 14940 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+2025-04-16T09:18:11.335+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:18:11.349+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:18:11.419+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:18:11.437+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 1.553 seconds (process running for 2014.441)
+2025-04-16T09:18:11.449+01:00  INFO 14940 --- [greeting] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-16T09:18:11.480+01:00  INFO 14940 --- [greeting] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-16T09:18:11.483+01:00  INFO 14940 --- [greeting] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-16T09:18:11.485+01:00  INFO 14940 --- [greeting] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-16T09:18:46.819+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-7] c.f.g.w.controllers.ExceptionController  : No static resource images/avatar1.png.
+2025-04-16T09:18:46.828+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/avatar1.png.]
+2025-04-16T09:19:06.588+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-7] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:19:06.620+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:19:11.487+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-3] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:19:11.488+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:19:18.106+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-8] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:19:18.108+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:19:19.832+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-2] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:19:19.833+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:19:21.591+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-6] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:19:21.597+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:19:22.739+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-7] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:19:22.741+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:19:23.746+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-1] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:19:23.754+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:19:25.021+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-3] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:19:25.024+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:19:30.713+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-6] c.f.g.w.controllers.ExceptionController  : No static resource images/avatar6.png.
+2025-04-16T09:19:30.721+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/avatar6.png.]
+2025-04-16T09:21:18.791+01:00  INFO 14940 --- [greeting] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-16T09:21:18.826+01:00  INFO 14940 --- [greeting] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-16T09:21:19.471+01:00  INFO 14940 --- [greeting] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-16T09:21:19.623+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 14940 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:21:19.630+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:21:20.474+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:21:20.476+01:00  INFO 14940 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:21:20.483+01:00  INFO 14940 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:21:20.538+01:00  INFO 14940 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:21:20.539+01:00  INFO 14940 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 904 ms
+2025-04-16T09:21:21.337+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:21:21.343+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:21:21.366+01:00  INFO 14940 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:21:21.402+01:00  INFO 14940 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 1.842 seconds (process running for 2204.407)
+2025-04-16T09:21:21.408+01:00  INFO 14940 --- [greeting] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-16T09:21:27.455+01:00  INFO 14940 --- [greeting] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-16T09:21:27.457+01:00  INFO 14940 --- [greeting] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-16T09:21:27.459+01:00  INFO 14940 --- [greeting] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-04-16T09:21:27.609+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-5] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:21:27.614+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:21:33.983+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-10] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:21:33.984+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:21:34.048+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-1] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:21:34.058+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:21:35.970+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-8] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:21:35.972+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:21:36.018+01:00 ERROR 14940 --- [greeting] [http-nio-8080-exec-5] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:21:36.019+01:00  WARN 14940 --- [greeting] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:22:16.701+01:00  INFO 10404 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 10404 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:22:16.715+01:00  INFO 10404 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:22:16.831+01:00  INFO 10404 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-16T09:22:16.833+01:00  INFO 10404 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-16T09:22:19.954+01:00  INFO 10404 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:22:20.006+01:00  INFO 10404 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:22:20.007+01:00  INFO 10404 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:22:20.157+01:00  INFO 10404 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:22:20.162+01:00  INFO 10404 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3328 ms
+2025-04-16T09:22:22.467+01:00  INFO 10404 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:22:22.481+01:00  INFO 10404 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:22:22.652+01:00  INFO 10404 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:22:22.682+01:00  INFO 10404 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 6.698 seconds (process running for 7.649)
+2025-04-16T09:22:24.846+01:00  INFO 10404 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-16T09:22:24.847+01:00  INFO 10404 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-16T09:22:24.850+01:00  INFO 10404 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-16T09:22:28.288+01:00 ERROR 10404 --- [greeting] [http-nio-8080-exec-3] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:22:28.351+01:00  WARN 10404 --- [greeting] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:22:31.313+01:00 ERROR 10404 --- [greeting] [http-nio-8080-exec-10] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:22:31.319+01:00  WARN 10404 --- [greeting] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:22:38.100+01:00 ERROR 10404 --- [greeting] [http-nio-8080-exec-4] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:22:38.121+01:00  WARN 10404 --- [greeting] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:22:40.076+01:00 ERROR 10404 --- [greeting] [http-nio-8080-exec-3] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:22:40.094+01:00  WARN 10404 --- [greeting] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:24:10.947+01:00  INFO 10504 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 10504 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:24:10.974+01:00  INFO 10504 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:24:11.136+01:00  INFO 10504 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-16T09:24:11.139+01:00  INFO 10504 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-16T09:24:14.975+01:00  INFO 10504 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:24:15.019+01:00  INFO 10504 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:24:15.023+01:00  INFO 10504 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:24:15.187+01:00  INFO 10504 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:24:15.190+01:00  INFO 10504 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4049 ms
+2025-04-16T09:24:18.436+01:00  INFO 10504 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:24:18.485+01:00  INFO 10504 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:24:18.687+01:00  INFO 10504 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-16T09:24:18.726+01:00  INFO 10504 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-16T09:24:18.735+01:00  INFO 10504 --- [greeting] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-16T09:24:18.786+01:00  INFO 10504 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:24:18.816+01:00  INFO 10504 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 9.004 seconds (process running for 10.341)
+2025-04-16T09:24:20.147+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-4] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:24:20.267+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:24:20.717+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-8] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:24:20.725+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:24:52.354+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-2] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:24:52.355+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:24:58.600+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-10] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:24:58.604+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:24:58.689+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-4] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:24:58.693+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:25:00.531+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-9] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:25:00.538+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:25:00.599+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-3] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:25:00.601+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:25:01.907+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-7] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:25:01.908+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:25:09.550+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-8] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:25:09.553+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:25:09.605+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-5] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:25:09.642+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:25:11.339+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-2] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:25:11.342+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:25:11.405+01:00 ERROR 10504 --- [greeting] [http-nio-8080-exec-6] c.f.g.w.controllers.ExceptionController  : No static resource images/men.png.
+2025-04-16T09:25:11.426+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource images/men.png.]
+2025-04-16T09:39:42.099+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][person-list] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template person-list, line 8, col 9. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:39:42.127+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][person-list] Deprecated unwrapped fragment expression "layout/default-layout::body(title='People List')" found in template person-list, line 16, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='People List')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:42:34.777+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][add-person] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template add-person, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:42:34.784+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-6] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-6][add-person] Deprecated unwrapped fragment expression "layout/default-layout::body(title='Add person')" found in template add-person, line 14, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='Add person')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:43:39.261+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][person-list] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template person-list, line 8, col 9. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:43:39.270+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-8] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-8][person-list] Deprecated unwrapped fragment expression "layout/default-layout::body(title='People List')" found in template person-list, line 16, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='People List')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:43:43.013+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][person-list] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template person-list, line 8, col 9. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:43:43.019+01:00  WARN 10504 --- [greeting] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][person-list] Deprecated unwrapped fragment expression "layout/default-layout::body(title='People List')" found in template person-list, line 16, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='People List')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:04.046+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 13952 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:44:04.058+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:44:04.197+01:00  INFO 13952 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-16T09:44:04.205+01:00  INFO 13952 --- [greeting] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-16T09:44:08.580+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:44:08.614+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:44:08.623+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:44:08.762+01:00  INFO 13952 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:44:08.767+01:00  INFO 13952 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4552 ms
+2025-04-16T09:44:12.129+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:44:12.151+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:44:12.353+01:00  INFO 13952 --- [greeting] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-16T09:44:12.375+01:00  INFO 13952 --- [greeting] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-16T09:44:12.399+01:00  INFO 13952 --- [greeting] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-16T09:44:12.808+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:44:12.839+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 9.508 seconds (process running for 10.736)
+2025-04-16T09:44:13.957+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][person-list] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template person-list, line 8, col 9. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:14.197+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-1] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-1][person-list] Deprecated unwrapped fragment expression "layout/default-layout::body(title='People List')" found in template person-list, line 16, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='People List')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:17.823+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][add-person] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template add-person, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:17.828+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-9] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-9][add-person] Deprecated unwrapped fragment expression "layout/default-layout::body(title='Add person')" found in template add-person, line 14, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='Add person')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:19.089+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][person-list] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template person-list, line 8, col 9. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:19.093+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][person-list] Deprecated unwrapped fragment expression "layout/default-layout::body(title='People List')" found in template person-list, line 16, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='People List')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:21.291+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][add-person] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template add-person, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:21.300+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-10] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-10][add-person] Deprecated unwrapped fragment expression "layout/default-layout::body(title='Add person')" found in template add-person, line 14, col 7. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='Add person')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:22.930+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][person-list] Deprecated unwrapped fragment expression "layout/default-layout::link" found in template person-list, line 8, col 9. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::link}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:44:22.945+01:00  WARN 13952 --- [greeting] [http-nio-8080-exec-4] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-4][person-list] Deprecated unwrapped fragment expression "layout/default-layout::body(title='People List')" found in template person-list, line 16, col 10. Please use the complete syntax of fragment expressions instead ("~{layout/default-layout::body(title='People List')}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-16T09:52:17.621+01:00  INFO 13952 --- [greeting] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-16T09:52:17.812+01:00  INFO 13952 --- [greeting] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-16T09:52:19.402+01:00  INFO 13952 --- [greeting] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-16T09:52:19.871+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 13952 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:52:19.874+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:52:21.249+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:52:21.268+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:52:21.272+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:52:21.344+01:00  INFO 13952 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:52:21.374+01:00  INFO 13952 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1491 ms
+2025-04-16T09:52:23.677+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:52:23.714+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:52:23.807+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:52:23.854+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 4.271 seconds (process running for 501.751)
+2025-04-16T09:52:23.863+01:00  INFO 13952 --- [greeting] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-16T09:52:34.458+01:00  INFO 13952 --- [greeting] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 0 deletions, 8 modifications)
+2025-04-16T09:52:34.460+01:00  INFO 13952 --- [greeting] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-16T09:52:34.887+01:00  INFO 13952 --- [greeting] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-16T09:52:35.012+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 13952 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:52:35.015+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:52:35.624+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:52:35.626+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:52:35.627+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:52:35.665+01:00  INFO 13952 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:52:35.670+01:00  INFO 13952 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 642 ms
+2025-04-16T09:52:36.245+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:52:36.249+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:52:36.274+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:52:36.307+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 1.358 seconds (process running for 514.204)
+2025-04-16T09:52:36.309+01:00  INFO 13952 --- [greeting] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-16T09:58:00.258+01:00  INFO 13952 --- [greeting] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-16T09:58:00.261+01:00  INFO 13952 --- [greeting] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-16T09:58:00.686+01:00  INFO 13952 --- [greeting] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-16T09:58:00.795+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 13952 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:58:00.797+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:58:01.669+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:58:01.672+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:58:01.674+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:58:01.725+01:00  INFO 13952 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:58:01.727+01:00  INFO 13952 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 903 ms
+2025-04-16T09:58:02.579+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-16T09:58:02.692+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-16T09:58:02.762+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-16T09:58:02.871+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Started GreetingApplication in 2.116 seconds (process running for 840.769)
+2025-04-16T09:58:02.880+01:00  INFO 13952 --- [greeting] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-04-16T09:59:30.212+01:00  INFO 13952 --- [greeting] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-04-16T09:59:30.215+01:00  INFO 13952 --- [greeting] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-16T09:59:30.578+01:00  INFO 13952 --- [greeting] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-16T09:59:30.666+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 13952 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:59:30.667+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:59:31.637+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:59:31.639+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:59:31.640+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:59:31.691+01:00  INFO 13952 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:59:31.701+01:00  INFO 13952 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1028 ms
+2025-04-16T09:59:31.786+01:00  WARN 13952 --- [greeting] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personsController' defined in file [E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes\com\fsb\greeting\web\controllers\PersonsController.class]: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+2025-04-16T09:59:31.795+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-16T09:59:31.824+01:00  INFO 13952 --- [greeting] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-16T09:59:31.884+01:00 ERROR 13952 --- [greeting] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personsController' defined in file [E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes\com\fsb\greeting\web\controllers\PersonsController.class]: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.fsb.greeting.GreetingApplication.main(GreetingApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.2.jar:3.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.fsb.greeting.web.models.Person cannot be resolved
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+
+	at com.fsb.greeting.web.controllers.PersonsController.<init>(PersonsController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 26 common frames omitted
+
+2025-04-16T09:59:33.439+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 13952 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T09:59:33.442+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T09:59:33.895+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T09:59:33.896+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T09:59:33.898+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T09:59:33.947+01:00  INFO 13952 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-04-16T09:59:33.947+01:00  INFO 13952 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 500 ms
+2025-04-16T09:59:34.022+01:00  WARN 13952 --- [greeting] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personsController' defined in file [E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes\com\fsb\greeting\web\controllers\PersonsController.class]: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+2025-04-16T09:59:34.024+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-16T09:59:34.030+01:00  INFO 13952 --- [greeting] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-16T09:59:34.033+01:00 ERROR 13952 --- [greeting] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personsController' defined in file [E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes\com\fsb\greeting\web\controllers\PersonsController.class]: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.fsb.greeting.GreetingApplication.main(GreetingApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.2.jar:3.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.fsb.greeting.web.models.Person cannot be resolved
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+
+	at com.fsb.greeting.web.controllers.PersonsController.<init>(PersonsController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 26 common frames omitted
+
+2025-04-16T10:03:25.054+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : Starting GreetingApplication using Java 17.0.10 with PID 13952 (E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes started by adem in E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting)
+2025-04-16T10:03:25.082+01:00  INFO 13952 --- [greeting] [restartedMain] com.fsb.greeting.GreetingApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-16T10:03:26.324+01:00  INFO 13952 --- [greeting] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-16T10:03:26.328+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-16T10:03:26.330+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-16T10:03:26.367+01:00  INFO 13952 --- [greeting] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-04-16T10:03:26.379+01:00  INFO 13952 --- [greeting] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1266 ms
+2025-04-16T10:03:26.538+01:00  WARN 13952 --- [greeting] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personsController' defined in file [E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes\com\fsb\greeting\web\controllers\PersonsController.class]: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+2025-04-16T10:03:26.763+01:00  INFO 13952 --- [greeting] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-04-16T10:03:26.776+01:00  INFO 13952 --- [greeting] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-16T10:03:26.783+01:00 ERROR 13952 --- [greeting] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personsController' defined in file [E:\FSB\Mes matières\s2\Spring Boot GLSI2\2024-2025\ws\cours demo\greeting\target\classes\com\fsb\greeting\web\controllers\PersonsController.class]: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.fsb.greeting.GreetingApplication.main(GreetingApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.2.jar:3.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.fsb.greeting.web.controllers.PersonsController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.fsb.greeting.web.models.Person cannot be resolved
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+	Person cannot be resolved to a type
+
+	at com.fsb.greeting.web.controllers.PersonsController.<init>(PersonsController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 26 common frames omitted
+
