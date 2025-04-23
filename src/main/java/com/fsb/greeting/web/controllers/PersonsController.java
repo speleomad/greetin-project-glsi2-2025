@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.fsb.greeting.business.services.PersonService;
 import com.fsb.greeting.dao.entities.Person;
 import com.fsb.greeting.web.models.requests.PersonForm;
 
@@ -50,9 +51,16 @@ public class PersonsController {
         persons.add(new Person(++idCount, "demo4", (short) 50, "men.png"));
     }
 
+    //injection par constructeur
+    private final PersonService personService;
+    public PersonsController(PersonService personService) {
+        this.personService=personService;
+    }
+
     @RequestMapping()
     public String getAllPerson(Model model) {
-        model.addAttribute("persons", persons);
+       // model.addAttribute("persons", persons);
+       model.addAttribute("persons", this.personService.getAllPerson());
         return "person-list";
     }
 
@@ -92,12 +100,13 @@ public class PersonsController {
                 e.printStackTrace();
             }
             // Ajouter la nouvelle personne à la liste persons
-            persons.add(new Person(idCount++, personForm.getName(), personForm.getAge(), fileName.toString()));
-
+           // persons.add(new Person(idCount++, personForm.getName(), personForm.getAge(), fileName.toString()));
+          this.personService.addPerson(new Person(null, personForm.getName(), personForm.getAge(), fileName.toString()));
+            
         } else {
             // Ajouter une nouvelle personne sans image à la liste persons
-            persons.add(new Person(idCount++, personForm.getName(), personForm.getAge(), null));
-
+            //persons.add(new Person(idCount++, personForm.getName(), personForm.getAge(), null));
+            this.personService.addPerson(new Person(null, personForm.getName(), personForm.getAge(), null));
         }
         // persons.add(new Person(++idCount, personForm.getName(), personForm.getAge(),
         // null));
