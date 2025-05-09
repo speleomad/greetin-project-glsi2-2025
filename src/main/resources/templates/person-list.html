@@ -6,7 +6,11 @@
     <title>Person List</title>
   <!--   <link rel="stylesheet" th:href="@{/webjars/bootswatch/dist/flatly/bootstrap.css}"> -->
   <link th:replace="layout/default-layout::link">  
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+    function submitForm() {
+      document.getElementById("filterForm").submit();
+    }
+  </script>
 </head>
 
 <!-- <body>
@@ -15,13 +19,28 @@
     
    <body th:replace="layout/default-layout::body(title='People List')">
       <div th:fragment="content"> 
-        <a th:href="@{/persons/create}" class="btn btn-primary">Add Person</a> <br /><br />
-    
+       <!--  <a th:href="@{/persons/create}" class="btn btn-primary">Add Person</a> <br /><br /> -->
+       <div class="row mt-3 mb-4">
+        <div class="col-8">
+          <a class="btn btn-primary" th:href="@{/persons/create}">Add Person</a>
+        </div>
+        <div class="col-4">
+          <p><strong>Sort by Age:</strong></p>
+          <form th:action="@{/persons/filter}" method="get" id="filterForm">
+            <label><input type="radio" name="sortByAge" value="asc" th:checked="${sortByAge=='asc'}"
+                onchange="submitForm()"> Ascending</label>
+            <label><input type="radio" name="sortByAge" value="desc" th:checked="${sortByAge=='desc'}"
+                onchange="submitForm()"> Descending</label>
+          </form>
+  
+        </div>
+      </div>
         <table class="table table-hover" th:unless="${#lists.isEmpty(persons)}">
           <tr class="table-dark">
             <th>id</th>
             <th>Name</th>
             <th>Age</th>
+            <th>Age group</th>
             <th>Photo</th>
             <th>Actions</th>
           </tr>
@@ -29,7 +48,8 @@
             <td th:text="${person.id}"></td>
             <td th:text="${person.name}"></td>
             <td th:text="${person.Age}"></td>
-            <td><img th:src="(${person.photo}?@{|images/${person.photo}|}:@{'images/default.png'})" alt="photo"
+            <td th:text="${person.ageGroup}?${person.ageGroup.groupName}:'ND'"></td>
+            <td><img th:src="(${person.photo}?@{|/images/${person.photo}|}:@{'/images/default.png'})" alt="photo"
                 class="img-rounded img-responsive" style="max-height: 50px; max-width: 50px;"></td>
             <td>
               <div class="row">

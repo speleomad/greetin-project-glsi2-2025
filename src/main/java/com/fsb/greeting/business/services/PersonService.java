@@ -9,6 +9,7 @@ public interface PersonService {
     List<Person> getAllPerson();
     Person getPersonById(Long id);
     Person getPersonByName(String name);
+    List<Person> getPersonSortedByAge(String order);
     //create
     Person addPerson(Person person);
     //Update

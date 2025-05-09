@@ -31,6 +31,14 @@
                 <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}" class="invalid-feedback">Age Error</span>
             </div>
             <div>
+                <label class="form-label mt-4" for="ageGroup">Age Group</label>
+                <select class="form-select" id="ageGroup" th:field="*{ageGroup}">
+                    <option value="" selected disabled>Choose Age Group</option>
+                    <option th:each="ageGroup : ${ageGroups}" th:value="${ageGroup.id}" th:text="${ageGroup.groupName}">
+                    </option>
+                </select>
+            </div>
+            <div>
                 <img th:src="${personForm.photo!=null}?@{|/images/${personForm.photo}|}:@{/images/default.png}" 
                 alt="photo"
                 class="img-rounded img-responsive"

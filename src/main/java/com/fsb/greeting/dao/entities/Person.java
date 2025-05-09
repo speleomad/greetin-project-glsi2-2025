@@ -9,6 +9,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table; 
 
 
@@ -27,4 +29,16 @@ public class Person {
     private String name;
     private short age;
     private String photo; 
+    @ManyToOne()
+    @JoinColumn(name="age_group_id")
+    //si on ne veut pas que les personnes serons supprimées suite à la supression de ageGroup
+    /*@ManyToOne(optional = true)
+    @JoinColumn(name = "age_group_id", nullable = true)*/
+    private AgeGroup ageGroup;
+    public Person(Long id, String name, short age, String photo) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.photo = photo;
+    }
 }

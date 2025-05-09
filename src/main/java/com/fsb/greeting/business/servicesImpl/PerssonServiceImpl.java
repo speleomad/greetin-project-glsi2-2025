@@ -3,6 +3,7 @@ package com.fsb.greeting.business.servicesImpl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.fsb.greeting.business.services.PersonService;
@@ -53,6 +54,17 @@ public class PerssonServiceImpl implements PersonService {
         if(this.personRepository.existsById(id)){
              this.personRepository.deleteById(id);
           }
+    }
+
+    @Override
+    public List<Person> getPersonSortedByAge(String order/* tow values :  "asc" / "desc" */) {
+        //
+        Sort.Direction direction= Sort.Direction.ASC;
+        if("desc".equalsIgnoreCase(order)){
+            direction= Sort.Direction.DESC;
+        }
+       // return personRepository.findAll(Sort.by(Direction.ASC,"age"));
+       return personRepository.findAll(Sort.by(direction,"age"));
     }
     
 }
